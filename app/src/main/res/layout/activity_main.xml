@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/imageViewProfile"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:contentDescription="Foto Profil"
+        android:src="@drawable/foto_profil"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/textNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Khairani Nirmala Putri"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewProfile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/textPerkenalan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kelas XI PPLG 5 | Suka Baca Novel"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textNama"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/buttonInstagram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Instagram"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/textPerkenalan"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <Button
+        android:id="@+id/buttonWA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WhatsApp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintTop_toTopOf="@+id/buttonInstagram"
+        app:layout_constraintStart_toEndOf="@+id/buttonInstagram" />
+
+    <Button
+        android:id="@+id/buttonTiktok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="Tiktok"
+        app:layout_constraintStart_toEndOf="@+id/buttonWA"
+        app:layout_constraintTop_toTopOf="@+id/buttonInstagram" />
+
+    <Button
+        android:id="@+id/buttonProject"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Lihat Projectku"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/buttonInstagram"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/buttonHobi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Hobi Saya"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/buttonProject"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
