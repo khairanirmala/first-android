@@ -21,6 +21,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!-- Halaman Project -->
+        <activity
+            android:name=".ProjectActivity" />
+
+        <!-- Halaman Hobi -->
+        <activity
+            android:name=".HobiActivity" />
+
     </application>
 
 </manifest>
